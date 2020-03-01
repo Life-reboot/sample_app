@@ -1,0 +1,5 @@
+{
+  my_message: @message,
+  the_time: @time,
+  product: 4 * 3,
+}

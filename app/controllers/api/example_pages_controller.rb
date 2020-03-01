@@ -4,7 +4,9 @@ class Api::ExamplePagesController < ApplicationController
   end
 
   def time_method
-    render json: { message: "Welcome to the time app!", time: Time.now.strftime("%A, %b %d") }
+    @message = "Welcome to the time app!"
+    @time = Time.now.strftime("%A, %b %d")
+    render "time.json.jb"
   end
 
   def html_method
