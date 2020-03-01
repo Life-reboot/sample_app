@@ -6,4 +6,8 @@ class Api::ExamplePagesController < ApplicationController
   def time_method
     render json: { message: "Welcome to the time app!", time: Time.now.strftime("%A, %b %d") }
   end
+
+  def html_method
+    render html: "<h1>Awesome</h1><p>cool</p>".html_safe
+  end
 end
